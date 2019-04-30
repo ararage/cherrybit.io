@@ -9,9 +9,11 @@ function Layout(props) {
         className="transparentBG"
         brand={<img src={confLogo} />}
         centerLogo
-        alignLinks="left"
+        alignLinks="right"
       >
-        <NavItem>Getting started</NavItem>
+        <NavItem>Home</NavItem>
+        <NavItem>About</NavItem>
+        <NavItem>Contact</NavItem>
         <NavItem href="components.html" />
       </Navbar>
       {props.children}

@@ -11,9 +11,10 @@ import splash4 from "../images/splash-4.jpg";
 function SlidesList() {
   const slides = [
     {
-      title: "We are ...",
-      subtitle: "evolution, innovation, technology",
-      img: splash1
+      title: "We're passionate",
+      subtitle: "About what we do ",
+      img: splash1,
+      placement: "left"
     },
     {
       title: "Always thinking in the future",
@@ -23,13 +24,15 @@ function SlidesList() {
     {
       title: "We launch your solution to the stars and beyond!",
       subtitle: "To the cloud!",
-      img: splash3
+      img: splash3,
+      placement: "right light text-lighten-3"
     },
     {
       title: "People First",
       subtitle:
         "We think people it's more important than anything else in the world",
-      img: splash2
+      img: splash2,
+      placement: "black-text text-lighten-3"
     }
   ];
   return (
@@ -41,7 +44,7 @@ function SlidesList() {
             key={slide.title}
             image={<img src={slide.img} />}
           >
-            <Caption>
+            <Caption placement={slide.placement}>
               <h3>{slide.title}</h3>
               <h5 className="light grey-text text-lighten-3">
                 {slide.subtitle}
