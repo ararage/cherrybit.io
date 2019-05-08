@@ -1,3 +1,10 @@
 .transparentBG {
   background-color: rgba(0, 0, 0, 0);
 }
+
+.fixer {
+  width: 200px;
+  height: 100px;
+  float: left;
+  display: inline-block;
+}

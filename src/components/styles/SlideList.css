@@ -1,3 +1,10 @@
 .slider-back {
-  background: #333;
+  background-color: transparent;
+  margin: 0;
+  height: 400px;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }

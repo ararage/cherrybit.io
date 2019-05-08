@@ -7,7 +7,7 @@ function FooterComponent() {
   return (
     <Footer
       copyrights="© Copyright CherryBit.io 2019"
-      moreLinks={<a deded />}
+      moreLinks={<a />}
       links={<ul />}
       className="example"
     >
