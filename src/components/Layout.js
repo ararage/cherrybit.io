@@ -20,12 +20,14 @@ function Layout(props) {
         <Link to="/services">
           <NavItem>Services</NavItem>
         </Link>
-        <NavItem>Customers</NavItem>
+        <Link to="/customers">
+          <NavItem>Customers</NavItem>
+        </Link>
         <NavItem>About</NavItem>
         <NavItem>Contact</NavItem>
         <NavItem href="components.html" />
       </Navbar>
-      {props.children}
+      <main>{props.children}</main>
     </React.Fragment>
   );
 }
