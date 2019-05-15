@@ -12,7 +12,6 @@ function Layout(props) {
         alignLinks="left"
         centerLogo
         children={props.children}
-        fixed
       >
         <Link to="/">
           <NavItem>Home</NavItem>
