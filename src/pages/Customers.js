@@ -20,19 +20,16 @@ class Customers extends React.Component {
                     <Row>
                       {customer.reveal.map(capture => {
                         return (
-                          <Col s={4} className="indigo darken-3 white-text">
-                            {/*<img
-                              class="materialboxed"
-                              width="150"
-                              height="300"
-                              src={capture}
-                            />*/}
+                          <Col
+                            s={customer.s}
+                            className="indigo darken-3 white-text"
+                          >
                             <ImageZoom
                               image={{
                                 src: capture,
                                 alt: "Golden Gate Bridge",
                                 className: "img",
-                                style: { width: "10em" }
+                                style: { width: customer.width }
                               }}
                               zoomImage={{
                                 src: capture,

@@ -7,7 +7,13 @@ import MitzuImage1 from "./images/mitzu/06.png";
 import MitzuImage2 from "./images/mitzu/10.png";
 import MitzuImage3 from "./images/mitzu/11.png";
 
+import RamirezImage1 from "./images/ramirez/01.png";
+import RamirezImage2 from "./images/ramirez/02.png";
+import RamirezImage3 from "./images/ramirez/03.png";
+
 import MitzuImage from "./images/mitzu.jpg";
+import RamirezImage from "./images/ramirez.png";
+
 import MexGasImage from "./images/mexgas.jpg";
 import KSRImage from "./images/ksr.png";
 import LoveLemonsImage from "./images/lovelemons.png";
@@ -44,7 +50,9 @@ const customers = [
     image: MitzuImage,
     urlPage: "https://www.mitzu.com/",
     urlLabel: "Mitzu Web Page",
-    reveal: [MitzuImage1, MitzuImage2, MitzuImage3]
+    reveal: [MitzuImage1, MitzuImage2, MitzuImage3],
+    width: "10em",
+    s: 4
   },
   {
     title: "Mexgas (System Maintenance)",
@@ -62,11 +70,13 @@ const customers = [
   },
   {
     title: "Ramirez Arambula Altamarino Abogados S.C.",
-    image: "",
+    image: RamirezImage,
     urlPage:
       "https://www.ramirezarambulaaltamiranoabogadossc.com.mx/index.html",
     urlLabel: "Web Page",
-    reveal: [MitzuImage1, MitzuImage2, MitzuImage3]
+    reveal: [RamirezImage1, RamirezImage2, RamirezImage3],
+    width: "40em",
+    s: 12
   },
   {
     title: "Love and Lemons (Ecommerce)",
