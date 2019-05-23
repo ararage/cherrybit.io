@@ -52,21 +52,24 @@ const customers = [
     urlLabel: "Mitzu Web Page",
     reveal: [MitzuImage1, MitzuImage2, MitzuImage3],
     width: "10em",
-    s: 4
+    s: 4,
+    technologies: "Ionic 3 (Angular 4), NodeJS, MongoDB, AWS (EC2, RDS, S3)"
   },
   {
-    title: "Mexgas (System Maintenance)",
+    title: "Mexgas - SIGAD (System Maintenance)",
     image: MexGasImage,
     urlPage: "http://mgi-ai.com/filiales/mex-gas-trading",
     urlLabel: "Mexgas Web Page",
-    reveal: [MitzuImage1, MitzuImage2, MitzuImage3]
+    reveal: [],
+    technologies: "Yii2 Framework, PostgreSQL"
   },
   {
     title: "KSR Bocinas Ecommerce",
     image: KSRImage,
     urlPage: "https://baflesksr.com/",
     urlLabel: "KSR Web Page",
-    reveal: [MitzuImage1, MitzuImage2, MitzuImage3]
+    reveal: [],
+    technologies: "WooCommerce, MySQL"
   },
   {
     title: "Ramirez Arambula Altamarino Abogados S.C.",
@@ -76,14 +79,16 @@ const customers = [
     urlLabel: "Web Page",
     reveal: [RamirezImage1, RamirezImage2, RamirezImage3],
     width: "40em",
-    s: 12
+    s: 12,
+    technologies: "HTML5, MaterializeCSS"
   },
   {
     title: "Love and Lemons (Ecommerce)",
     image: LoveLemonsImage,
     urlPage: "http://www.loveandlemons.mx/",
     urlLabel: "Love and LemonsWeb Page",
-    reveal: [MitzuImage1, MitzuImage2, MitzuImage3]
+    reveal: [],
+    technologies: "WooCommerce, MySQL"
   }
 ];
 

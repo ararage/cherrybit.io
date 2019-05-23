@@ -55,6 +55,7 @@ class Customers extends React.Component {
                       {customer.urlLabel}
                     </a>
                   </p>
+                  <label>Technologies: {customer.technologies}</label>
                 </Card>
               </Col>
             );

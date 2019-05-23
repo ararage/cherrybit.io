@@ -22,7 +22,9 @@ function Layout(props) {
         <Link to="/customers">
           <NavItem>Customers</NavItem>
         </Link>
-        <NavItem>Contact</NavItem>
+        <Link to="/contact">
+          <NavItem>Contact</NavItem>
+        </Link>
         <NavItem href="components.html" />
       </Navbar>
       <main>{props.children}</main>
