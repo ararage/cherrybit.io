@@ -27,8 +27,8 @@ const Form = withFormik({
     ...user
   }),
   handleSubmit: (payload, { setSubmitting }) => {
-    alert(payload.email);
-    setSubmitting(false);
+    //alert(payload.email);
+    //setSubmitting(false);
   },
   displayName: "MyForm"
 });
