@@ -17,7 +17,11 @@ const Form = withFormik({
     email: yup
       .string()
       .email("Invalid email address")
-      .required("Email is required!")
+      .required("Email is required!"),
+    comment: yup
+      .string()
+      .min(10, "Invalid comment")
+      .required("Comment is required!")
   }),
   mapPropsToValues: ({ user }) => ({
     ...user
@@ -75,6 +79,41 @@ const TextInput = ({
   );
 };
 
+const TextArea = ({
+  type,
+  id,
+  label,
+  error,
+  value,
+  onChange,
+  className,
+  ...props
+}) => {
+  const classes = classnames(
+    "input-group",
+    {
+      "animated shake error": !!error
+    },
+    className
+  );
+  return (
+    <div className={classes}>
+      <Label htmlFor={id} error={error}>
+        {label}
+      </Label>
+      <textarea
+        id={id}
+        className="text-input"
+        type={type}
+        value={value}
+        onChange={onChange}
+        {...props}
+      />
+      <InputFeedback error={error} />
+    </div>
+  );
+};
+
 const MyForm = props => {
   const {
     values,
@@ -93,7 +132,7 @@ const MyForm = props => {
         id="firstName"
         type="text"
         label="First Name"
-        placeholder="John"
+        placeholder="Put your first name"
         error={touched.firstName && errors.firstName}
         value={values.firstName}
         onChange={handleChange}
@@ -103,7 +142,7 @@ const MyForm = props => {
         id="lastName"
         type="text"
         label="Last Name"
-        placeholder="Doe"
+        placeholder="Put your last name"
         error={touched.lastName && errors.lastName}
         value={values.lastName}
         onChange={handleChange}
@@ -113,20 +152,23 @@ const MyForm = props => {
         id="email"
         type="email"
         label="Email"
-        placeholder="Enter your email"
+        placeholder="your@email.com"
         error={touched.email && errors.email}
         value={values.email}
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      <button
-        type="button"
-        className="outline"
-        onClick={handleReset}
-        disabled={!dirty || isSubmitting}
-      >
-        Reset
-      </button>
+
+      <TextArea
+        id="comment"
+        type="comment"
+        label="Comment"
+        error={touched.comment && errors.comment}
+        value={values.comment}
+        onChange={handleChange}
+        onBlur={handleBlur}
+      />
+
       <button type="submit" disabled={isSubmitting}>
         Submit
       </button>
@@ -136,4 +178,4 @@ const MyForm = props => {
 
 const ContactForm = Form(MyForm);
 
-export { ContactForm };
+export default ContactForm;

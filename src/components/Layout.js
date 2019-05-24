@@ -13,19 +13,10 @@ function Layout(props) {
         centerLogo
         children={props.children}
       >
-        <Link to="/">
-          <NavItem>Home</NavItem>
-        </Link>
-        <Link to="/services">
-          <NavItem>Services</NavItem>
-        </Link>
-        <Link to="/customers">
-          <NavItem>Customers</NavItem>
-        </Link>
-        <Link to="/contact">
-          <NavItem>Contact</NavItem>
-        </Link>
-        <NavItem href="components.html" />
+        <Link to="/">Home</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/customers">Customers</Link>
+        <Link to="/contact">Contact</Link>
       </Navbar>
       <main>{props.children}</main>
     </React.Fragment>
