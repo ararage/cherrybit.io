@@ -18,6 +18,25 @@ import MexGasImage from "./images/mexgas.jpg";
 import KSRImage from "./images/ksr.png";
 import LoveLemonsImage from "./images/lovelemons.png";
 
+import parallax1 from "./images/parallax-1.jpeg";
+import parallax2 from "./images/parallax-2.jpg";
+
+const parallaxes = [
+  {
+    title: "Innovation and Code",
+    subtitle: "We design, plan, code and deliver your needs",
+    img: parallax1,
+    pclassName: "black-text text-lighten-3 lighten-3"
+  },
+  {
+    title: "Multiple Solutions",
+    subtitle:
+      "CherryBit provides end-to-end software development using the latest technologies such as NodeJS, Python, React, etc. ",
+    img: parallax2,
+    pclassName: "black-text text-lighten-3 lighten-3"
+  }
+];
+
 const slides = [
   {
     title: "We're passionate",
@@ -56,12 +75,12 @@ const customers = [
     technologies: "Ionic 3 (Angular 4), NodeJS, MongoDB, AWS (EC2, RDS, S3)"
   },
   {
-    title: "Mexgas - SIGAD (System Maintenance)",
+    title: "Mexgas",
     image: MexGasImage,
     urlPage: "http://mgi-ai.com/filiales/mex-gas-trading",
     urlLabel: "Mexgas Web Page",
     reveal: [],
-    technologies: "Yii2 Framework, PostgreSQL"
+    technologies: "Yii2 Framework, PostgreSQL, Codeignater, Python, Angular"
   },
   {
     title: "KSR Bocinas Ecommerce",
@@ -92,4 +111,4 @@ const customers = [
   }
 ];
 
-export { slides, customers };
+export { slides, customers, parallaxes };

@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, NavItem } from "react-materialize";
+import { Navbar } from "react-materialize";
 import confLogo from "../images/logo-48.png";
+import FooterComponent from "../components/Footer";
+import "./styles/Layout.css";
 
 function Layout(props) {
   return (
     <React.Fragment>
       <Navbar
-        className="transparentBG"
+        className="grey darken-1"
         brand={<img src={confLogo} />}
         alignLinks="left"
         centerLogo
@@ -19,6 +21,7 @@ function Layout(props) {
         <Link to="/contact">Contact</Link>
       </Navbar>
       <main>{props.children}</main>
+      <FooterComponent />
     </React.Fragment>
   );
 }

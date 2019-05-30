@@ -8,20 +8,16 @@ const Form = withFormik({
   validationSchema: yup.object().shape({
     firstName: yup
       .string()
-      .min(2, "C'mon, your name is longer than that")
+      //.min(2, "C'mon, your name is longer than that")
       .required("First name is required."),
-    lastName: yup
-      .string()
-      .min(2, "C'mon, your name is longer than that")
-      .required("Last name is required."),
     email: yup
       .string()
       .email("Invalid email address")
       .required("Email is required!"),
-    comment: yup
+    phone: yup
       .string()
-      .min(10, "Invalid comment")
-      .required("Comment is required!")
+      .min(10, "Invalid phone")
+      .required("Phone is required!")
   }),
   mapPropsToValues: ({ user }) => ({
     ...user
@@ -131,20 +127,10 @@ const MyForm = props => {
       <TextInput
         id="firstName"
         type="text"
-        label="First Name"
-        placeholder="Put your first name"
+        placeholder="Your Name"
+        className="font-weight: bold;"
         error={touched.firstName && errors.firstName}
         value={values.firstName}
-        onChange={handleChange}
-        onBlur={handleBlur}
-      />
-      <TextInput
-        id="lastName"
-        type="text"
-        label="Last Name"
-        placeholder="Put your last name"
-        error={touched.lastName && errors.lastName}
-        value={values.lastName}
         onChange={handleChange}
         onBlur={handleBlur}
       />
@@ -161,9 +147,9 @@ const MyForm = props => {
 
       <TextArea
         id="comment"
-        type="comment"
-        label="Comment"
-        error={touched.comment && errors.comment}
+        type="phone"
+        label="Phone"
+        error={touched.comment && errors.phone}
         value={values.comment}
         onChange={handleChange}
         onBlur={handleBlur}

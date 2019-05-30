@@ -15,9 +15,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <SlidesList />
         <ParallaxList />
-        <FooterComponent />
       </div>
     );
   }
