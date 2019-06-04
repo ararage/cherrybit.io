@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "../components/Form";
 import Person from "../components/Person";
 
 class Contact extends React.Component {
@@ -8,12 +7,12 @@ class Contact extends React.Component {
       <div>
         <div className="container">
           <div className="row">
-            <div className="col s12">
+            {/*<div className="col s12">
               <h1>Lets Talk</h1>
               <Form />
-            </div>
+            </div>*/}
             <div className="col s12">
-              <h1>Or email us directly</h1>
+              <h1>Contact us directly</h1>
               <Person />
             </div>
           </div>

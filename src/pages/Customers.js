@@ -27,13 +27,13 @@ class Customers extends React.Component {
                             <ImageZoom
                               image={{
                                 src: capture,
-                                alt: "Golden Gate Bridge",
+                                alt: "",
                                 className: "img",
                                 style: { width: customer.width }
                               }}
                               zoomImage={{
                                 src: capture,
-                                alt: "Golden Gate Bridge"
+                                alt: ""
                               }}
                             />
                           </Col>
@@ -47,11 +47,16 @@ class Customers extends React.Component {
                       className="activator"
                       height="250"
                       width="600"
+                      alt={customer.title}
                       src={customer.image}
                     />
                   </div>
                   <p>
-                    <a href={customer.urlPage} target="_blank">
+                    <a
+                      href={customer.urlPage}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {customer.urlLabel}
                     </a>
                   </p>

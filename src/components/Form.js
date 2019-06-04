@@ -115,11 +115,9 @@ const MyForm = props => {
     values,
     touched,
     errors,
-    dirty,
     handleChange,
     handleBlur,
     handleSubmit,
-    handleReset,
     isSubmitting
   } = props;
   return (

@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function FooterComponent() {
   return (
-    <footer class="page-footer grey darken-1">
-      <div class="container">
-        <div class="row">
-          <div class="col l4 offset-l0 s4">
-            <h5 class="white-text">Cherry</h5>
+    <footer className="page-footer grey darken-1">
+      <div className="container">
+        <div className="row">
+          <div className="col l4 offset-l0 s4">
+            <h5 className="white-text">Cherry</h5>
             <ul>
               <li>
                 <Link className="grey-text text-lighten-3" to="/">
@@ -33,8 +33,8 @@ function FooterComponent() {
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+      <div className="footer-copyright">
+        <div className="container">
           © 2019 CherryBit.io
           <Link className="grey-text text-lighten-4 right" to="/">
             Home

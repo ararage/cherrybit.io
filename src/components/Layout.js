@@ -10,7 +10,7 @@ function Layout(props) {
     <React.Fragment>
       <Navbar
         className="grey darken-1"
-        brand={<img src={confLogo} />}
+        brand={<img src={confLogo} alt={confLogo} />}
         alignLinks="left"
         centerLogo
         children={props.children}

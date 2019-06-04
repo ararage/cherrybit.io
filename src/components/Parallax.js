@@ -12,7 +12,10 @@ function ParallaxList() {
     <div>
       {parallaxes.map(parallax => {
         return (
-          <Parallax key={parallax.title} image={<img src={parallax.img} />}>
+          <Parallax
+            key={parallax.title}
+            image={<img src={parallax.img} alt={parallax.title} />}
+          >
             <div className="section indigo lighten-5">
               <div className="row container">
                 <h2>{parallax.title}</h2>

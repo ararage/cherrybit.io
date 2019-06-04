@@ -21,6 +21,9 @@ import LoveLemonsImage from "./images/lovelemons.png";
 import parallax1 from "./images/parallax-1.jpeg";
 import parallax2 from "./images/parallax-2.jpg";
 
+import arciaImage from "./images/36333917.jpg";
+import ricardoImage from "./images/7683853.png";
+
 const parallaxes = [
   {
     title: "Innovation and Code",
@@ -111,4 +114,24 @@ const customers = [
   }
 ];
 
-export { slides, customers, parallaxes };
+const people = [
+  {
+    name: "Oscar Arcia, CEO",
+    image: arciaImage,
+    github: "https://github.com/oarcia",
+    twitter: "https://twitter.com/@oarcia99",
+    linkedin: "https://www.linkedin.com/in/oscar-arcia-a48388162/",
+    email: "arciaoscar@cherrybit.com.mx"
+  },
+  {
+    name: "Ricardo Pérez, COO",
+    image: ricardoImage,
+    github: "https://github.com/ararage",
+    twitter: "https://twitter.com/ararage_kun",
+    linkedin:
+      "https://www.linkedin.com/in/jos%C3%A9-ricardo-p%C3%A9rez-32681959/",
+    email: "perezricardo@cherrybit.com.mx"
+  }
+];
+
+export { slides, customers, parallaxes, people };
